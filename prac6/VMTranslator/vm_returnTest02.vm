@@ -1,0 +1,5 @@
+call SimpleFunction 0
+
+function SimpleFunction 0
+push constant 1
+return

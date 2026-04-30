@@ -1,0 +1,2 @@
+push local 1
+pop static 0

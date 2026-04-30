@@ -1,0 +1,4 @@
+label LOOP2
+push constant 0
+if-goto LOOP2
+label LOOP1

@@ -1,0 +1,63 @@
+// Contains a function ArrMax.arrMax that finds and returns the largest element in the array a of length b.
+// a & b are both supplied as arguments
+
+// Put your code here.
+
+function ArrMax.arrMax 2
+
+push argument 0           
+pop pointer 1         
+
+push constant 0
+pop local 0
+push constant 0
+pop local 1
+
+// setting
+push that 0
+pop local 1
+
+//mark down index move 1
+push constant 1
+push local 0
+add
+pop local 0
+
+//checking
+push local 0
+push argument 1
+eq
+if-goto ENDING
+
+label LOOP
+push pointer 1
+push constant 1
+add
+pop pointer 1 
+push that 0
+push local 1
+gt
+if-goto CHANGELOCAL
+
+label BACKTRACK
+push constant 1
+push local 0
+add
+pop local 0
+push local 0
+push argument 1
+eq
+if-goto ENDING
+
+goto LOOP
+
+label CHANGELOCAL
+push that 0
+pop local 1
+goto BACKTRACK
+
+
+label ENDING
+push local 1
+return
+
